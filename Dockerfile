@@ -29,6 +29,9 @@ RUN apt-get update \
     redis-tools \
     xvfb \
     python \
+    node \
+    nodejs \
+    npm \
 &&  apt-get clean \
 &&  rm -rf /var/cache/apt/archives/* /var/lib/apt/lists/*
 
