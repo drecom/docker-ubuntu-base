@@ -18,8 +18,26 @@ RUN apt-get update \
     git \
     build-essential \
     vim \
+    dtach \
+    imagemagick \
+    libmagick++-dev \
+    libqtwebkit-dev \
+    libffi-dev \
+    mysql-client \
+    libmysqlclient-dev \
+    libxslt1-dev \
+    redis-tools \
+    xvfb \
+    python \
 &&  apt-get clean \
 &&  rm -rf /var/cache/apt/archives/* /var/lib/apt/lists/*
+
+# pip install
+RUN wget https://bootstrap.pypa.io/get-pip.py \
+&&  python get-pip.py
+
+# s3cmd install
+RUN pip install s3cmd
 
 # defaultのlocaleをja_JP.UTF-8にする
 ENV LANG=ja_JP.UTF-8
