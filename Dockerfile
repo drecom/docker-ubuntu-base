@@ -2,7 +2,7 @@
 #
 # VERSION               0.0.1
 
-FROM      ubuntu:latest
+FROM ubuntu:12.10
 
 MAINTAINER Drecom Technical Development Department <pr_itn@drecom.co.jp>
 
