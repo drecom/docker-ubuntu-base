@@ -9,6 +9,12 @@ It's on [docker-hub](https://hub.docker.com/r/drecom/ubuntu-base/) and [github](
 
  * latest
 
+## how to build
+
+```sh
+docker build --rm -t ubuntu-base .
+```
+
 ## running
 
 ```sh
