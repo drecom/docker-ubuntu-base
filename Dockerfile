@@ -4,7 +4,7 @@
 
 FROM      ubuntu:latest
 
-MAINTAINER Gen Takahashi <gen.takahashi@drecom.co.jp>
+MAINTAINER Drecom Technical Development Department <pr_itn@drecom.co.jp>
 
 RUN apt-get update \
 &&  apt-get upgrade -y --force-yes \
