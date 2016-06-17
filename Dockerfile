@@ -41,6 +41,14 @@ RUN wget https://bootstrap.pypa.io/get-pip.py \
 # s3cmd install
 RUN pip install s3cmd
 
+# phantomjs install
+ENV PHANTOMJS_VERSION 2.1.1
+RUN wget https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-${PHANTOMJS_VERSION}-linux-x86_64.tar.bz2 \
+&&  tar xf phantomjs-${PHANTOMJS_VERSION}-linux-x86_64.tar.bz2 \
+&&  mv     phantomjs-${PHANTOMJS_VERSION}-linux-x86_64/bin/phantomjs /usr/bin/phantomjs \
+&&  rm -rf phantomjs-${PHANTOMJS_VERSION}-linux-x86_64 \
+&&  rm     phantomjs-${PHANTOMJS_VERSION}-linux-x86_64.tar.bz2
+
 # defaultのlocaleをja_JP.UTF-8にする
 ENV LANG=ja_JP.UTF-8
 RUN update-locale LANG=ja_JP.UTF-8
