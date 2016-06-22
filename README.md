@@ -3,7 +3,7 @@
 
 A Ubuntu docker container
 
-It's on [docker-hub](https://hub.docker.com/r/drecom/ubuntu-base/) and [github](https://github.com/gendre/docker-ubuntu-base/)
+It's on [docker-hub](https://hub.docker.com/r/drecom/ubuntu-base/) and [github](https://github.com/drecom/docker-ubuntu-base/)
 
 ## tags and links
 * `latest` [(master/Dockerfile)](https://github.com/drecom/docker-ubuntu-base/blob/master/Dockerfile)
