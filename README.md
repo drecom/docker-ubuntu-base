@@ -1,5 +1,5 @@
 # docker-ubuntu-base
-
+[![CircleCI](https://circleci.com/gh/drecom/docker-ubuntu-base/tree/master.svg?style=svg)](https://circleci.com/gh/drecom/docker-ubuntu-base/tree/master)
 
 A Ubuntu docker container
 
