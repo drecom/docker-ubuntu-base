@@ -31,6 +31,7 @@ RUN apt-get update \
     python \
     nodejs \
     npm \
+    tzdata \
 &&  apt-get clean \
 &&  rm -rf /var/cache/apt/archives/* /var/lib/apt/lists/*
 
