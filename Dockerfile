@@ -29,11 +29,17 @@ RUN apt-get update \
     redis-tools \
     xvfb \
     python \
-    nodejs \
-    npm \
     tzdata \
 &&  apt-get clean \
 &&  rm -rf /var/cache/apt/archives/* /var/lib/apt/lists/*
+
+# node.js LTS install
+RUN curl --silent --location https://deb.nodesource.com/setup_6.x | bash - \
+    && apt-get install -y nodejs \
+    && npm -g up
+
+# yarn install
+RUN curl -o- -L https://yarnpkg.com/install.sh | bash
 
 # pip install
 RUN wget https://bootstrap.pypa.io/get-pip.py \
